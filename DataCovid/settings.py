@@ -23,8 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mj35fl42v#zp*g(ps$_ip%tt!ebxgb^f7227tlgw_a=65-3b1#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 #ALLOWED_HOSTS = ["127.0.0.1",".diresamdd-gob-pe.azurewebsites.net"]
 
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
