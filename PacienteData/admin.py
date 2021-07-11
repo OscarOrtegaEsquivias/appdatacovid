@@ -18,8 +18,8 @@ class PacienrteResource(resources.ModelResource):
 
 class PacienteAdmin(ImportExportModelAdmin, admin.ModelAdmin):
 
-	search_fields = ['num_document','nombre','apePaterno','apeMaterno','sexo','celular']
-	list_display = ('num_document','nombre','apePaterno','apeMaterno','sexo','celular')
+	search_fields = ['num_document','nombre','apePaterno','apeMaterno','sexo','celular','fechaPrimeraDosis','fechaSegundaDosis']
+	list_display = ('num_document','nombre','apePaterno','apeMaterno','sexo','celular','fechaPrimeraDosis','fechaSegundaDosis')
 #	ordering = ['dni']
 
 	resource_class = PacienrteResource
