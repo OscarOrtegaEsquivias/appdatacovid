@@ -19,7 +19,7 @@ class Paciente(models.Model):
 		('1','MASCULINO'),
 		)
 	sexo = models.CharField(max_length=1, choices=sexos, blank=True)
-	celular = models.CharField(max_length=9, blank=True)
+	celular = models.CharField(max_length=9, blank=True, null=True)
 	userDiresa  =  UserForeignKey(auto_user = True, related_name = "Paciente")
 	fechaPrimeraDosis = models.DateField(blank=True, null=True)
 	fechaSegundaDosis = models.DateField(blank=True, null=True)
