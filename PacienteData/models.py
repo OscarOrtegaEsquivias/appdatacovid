@@ -9,7 +9,7 @@ class Paciente(models.Model):
 		('1','DNI'),
 		('2','Carnet de Extrangeria'),
 		)
-	tipo_doc = models.CharField(max_length=1, choices=tipo_document)
+	tipo_doc = models.CharField(max_length=1, choices=tipo_document, unique=True)
 	num_document = models.CharField(max_length=9)
 	nombre = models.CharField(max_length=100, blank=True, null=True)
 	apePaterno = models.CharField(max_length=100, blank=True, null=True)
