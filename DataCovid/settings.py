@@ -89,9 +89,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'diresamddata',
-        'USER': 'oscarortega@servidordatabasediresa',
+        'USER': 'diresamddata@databasediresa',
         'PASSWORD': '05caR1989$*',
-        'HOST': 'servidordatabasediresa.mysql.database.azure.com',
+        'HOST': 'databasediresa.mysql.database.azure.com',
         'PORT': '3306',
     }
 }
@@ -121,7 +121,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-pe'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC-5'
 
 USE_I18N = True
 
