@@ -89,9 +89,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'diresamddata',
-        'USER': 'diresamddata@databasediresa',
+        'USER': 'diresamddata@diresamdd',
         'PASSWORD': '05caR1989$*',
-        'HOST': 'databasediresa.mysql.database.azure.com',
+        'HOST': 'diresamdd.mysql.database.azure.com',
         'PORT': '3306',
     }
 }
